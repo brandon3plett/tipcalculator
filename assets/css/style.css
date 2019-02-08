@@ -1,4 +1,6 @@
-body {}
+body {
+    background-image: url("../images/res.png")
+}
 
 .tip-calculator {
     background: silver;
