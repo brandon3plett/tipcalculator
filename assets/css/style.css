@@ -3,15 +3,14 @@ body {
 }
 
 .tip-calculator {
-    background: silver;
+    background: rgba(128, 83, 0, .85);
     position: relative;
     text-align: center;
     width: 300px;
     height: 500px;
     margin: auto;
     top: 50px;
-    border: solid 1px black;
-    border-radius: 10px;
+    border: solid 2px black;
 }
 
 #calculate-btn {

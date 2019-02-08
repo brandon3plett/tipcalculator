@@ -7,8 +7,8 @@ let dropdown = document.querySelector(".dropdown");
 
 const calculatePercentage = (subtotal, percentage) => {
     let totalWithTip = subtotal * percentage;
-    console.log(parseFloat(totalWithTip.toFixed(2)));
-    calculatedTip.textContent = parseFloat(totalWithTip.toFixed(2));
+    //console.log(parseFloat(totalWithTip.toFixed(2)));
+    calculatedTip.textContent = parseFloat(totalWithTip).toFixed(2);
 }
 
 calculateBtn.onclick = () => {
@@ -18,7 +18,7 @@ calculateBtn.onclick = () => {
         let subTotalParse = parseFloat(subTotal.value);
         let dropdownParse = parseFloat(dropdown.value);
         calculatePercentage(subTotalParse, dropdownParse);
-        console.log(subTotalParse + parseFloat(calculatedTip.textContent));
-        totalAndTip.textContent = subTotalParse + parseFloat(calculatedTip.textContent);
+        //console.log(subTotalParse + parseFloat(calculatedTip.textContent));
+        totalAndTip.textContent = (subTotalParse + parseFloat(calculatedTip.textContent)).toFixed(2);
     }
 }
