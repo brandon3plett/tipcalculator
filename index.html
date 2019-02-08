@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="tip-calculator">
+        <h3>Sub-Total Amount</h3>
+        $ <input placeholder="0.00" id="subtotal-input">
+        <h3>Choose a percentage</h3>
+        <select class="dropdown">
+            <option value=".15">15%</option>
+            <option value=".20">20%</option>
+            <option value=".25">25%</option>
+        </select>
+        <button id="calculate-btn">Calculate</button>
+        <p>Tip amount: <span id="calculated-tip"></span></p>
+        <p>Total w/tip: <span id="total-and-tip"></span></p>
+        <h2>OR</h2>
+        <h3>Enter your own amount</h3>
+        $ <input placeholder="0.00" id="custom-tip-input">
+        <br>
+        <br>
+        <!--<button id="calculate-btn">Calculate</button>
+        <p id="calculated-total-display"></p>-->
+    </div>
+    <script src="assets/js/calculate.js"></script>
+</body>
+
+</html>
