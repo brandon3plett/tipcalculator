@@ -3,7 +3,7 @@ body {
 }
 
 .tip-calculator {
-    background: rgba(128, 83, 0, .85);
+    background-color: rgba(128, 83, 0, .85);
     position: relative;
     text-align: center;
     width: 300px;
@@ -18,6 +18,3 @@ body {
     margin: auto;
     margin-top: 25px;
 }
-
-
-
