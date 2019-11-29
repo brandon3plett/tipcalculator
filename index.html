@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon3.jpg" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Tip Calculator</title>
 </head>
 
 <body>
+    <h1>Tip Calculator</h1>
+    <hr>
     <div class="tip-calculator">
-        <h3>Sub-Total Amount</h3>
-        $ <input placeholder="0.00" id="subtotal-input">
-        <h3>Choose a percentage</h3>
-        <select class="dropdown">
-            <option disabled selected value>Select %</option>
-            <option value=".10">10%</option>
-            <option value=".15">15%</option>
-            <option value=".20">20%</option>
-            <option value=".25">25%</option>
-            <option value=".30">30%</option>
-        </select>
-        <h2>OR</h2>
-        <h3>Enter your own amount</h3>
-        $ <input placeholder="0.00" id="custom-tip-input">
-        <button id="calculate-btn">Calculate</button>
-        <p>Tip amount: <br><span id="calculated-tip"></span></p>
-        <p>Total w/tip: <br><span id="total-and-tip"></span></p>
-        <br>
-        <br>
-        <!--<button id="calculate-btn">Calculate</button>
-        <p id="calculated-total-display"></p>-->
+        <div class="subtotal-amount">
+            <label for="subtotal-input">Sub-Total Amount</label>
+            <span class="dollar-sign">$</span> <input placeholder="0.00" id="subtotal-input" type="number">
+        </div>
+
+        <div class="percentage">
+            <p>Choose a percentage</p>
+            <select id="percentage-dropdown">
+                <option disabled selected value>Select %</option>
+                <option value=".10">10%</option>
+                <option value=".15">15%</option>
+                <option value=".20">20%</option>
+                <option value=".25">25%</option>
+                <option value=".30">30%</option>
+            </select>
+        </div>
+        <span class="or">OR</span>
+        <div class="custom-amount">
+            <label for="custom-tip-input">Enter your own amount</label>
+            <span class="dollar-sign">$</span> <input placeholder="0.00" id="custom-tip-input" type="number">
+            <button id="calculate-btn">Calculate</button>
+        </div>
+
+        <div class="calculated-totals">
+            <p>Tip amount: <span id="calculated-tip"></span></p>
+            <p>Total w/tip: <span id="grand-total"></span></p>
+        </div>
     </div>
     <script src="assets/js/calculate.js"></script>
 </body>
