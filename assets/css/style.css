@@ -11,9 +11,10 @@ html {
 
 body {
     background-image: url("../img/background-restaurant.jpg");
-    background-position: 30%;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
     color: #ffffff;
 }
